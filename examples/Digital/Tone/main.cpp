@@ -7,8 +7,9 @@
    * 8-ohm speaker on digital pin 8
    */
 
-#include "Melody.h"
-#include "Tone.h"
+#include <Melody.h>
+#include <Tone.h>
+using namespace zeus;
 
 main() {
 	Melody music(1_second); // create a music with periode of 1 second

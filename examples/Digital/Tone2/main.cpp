@@ -9,9 +9,12 @@
    * 4.7K resistor on analog A0 to ground
    */
 
-#include "Tone.h"
-#include "analogInput.h"
-#include "Serial.h"
+#include <Tone.h>
+#include <AnalogPin.h>
+#include <Serial.h>
+#include <map.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	Tone speaker(9); // object speaker represents the pin 9 to play tones

@@ -16,7 +16,10 @@
    * LED attached from digital pin 9 to ground
    */
 
-#include "analogIO.h"
+#include <AnalogPin.h>
+#include <PWMPin.h>
+#include <map.h>
+using namespace zeus;
 
 main() {
 	AnalogPin sensor(A0);

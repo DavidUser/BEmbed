@@ -7,7 +7,9 @@
    * LED attached from digital pin 9 to ground
    */
 
-#include "analogOutput.h"
+#include <PWMPin.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	PWMPin led(9); // LED connected to digital pin 9

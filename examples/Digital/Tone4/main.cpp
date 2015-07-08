@@ -10,7 +10,9 @@
    do serial work need of delay lockings
    */
 
-#include "Tone.h"
+#include <Tone.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	Tone speakers[] = { 6, 7, 8 };

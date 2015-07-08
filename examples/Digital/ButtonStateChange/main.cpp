@@ -16,8 +16,9 @@
    most Arduino boards)
    */
 
-#include <digitalIO.h>
-#include <interruption.h>
+#include <Pin.h>
+#include <SignalInterruption.h>
+using namespace zeus;
 
 const Pin button(2);
 const Pin led(13);

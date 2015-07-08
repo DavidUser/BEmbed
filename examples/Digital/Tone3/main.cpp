@@ -9,9 +9,12 @@
    * 8-ohm speaker on digital pin 8
    */
 
-#include "analogInput.h"
-#include "Tone.h"
-#include <map.h>
+#include <AnalogPin.h>
+#include <Tone.h>
+using namespace zeus;
+
+#include <map>
+
 
 main() {
 	AnalogPin keys[] = { A0, A1, A2 }; // pins of sensors reading

@@ -4,7 +4,9 @@
    using the PWM (Pulse Width Modulation) function
    */
 
-#include <analogOutput.h>
+#include <PWMPin.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	PWMPin led(9); // object led repesent the pin 9 with pwm capability

@@ -12,7 +12,10 @@
    * LEDs attached from pins 2 through 13 to ground
    */
 
-#include "analogOutput.h"
+#include <PWMPin.h>
+#include <time.h>
+using namespace zeus;
+#include <vector>
 
 main() {
 	std::vector<PWMPin> leds = PWMPin::getRange(2,13); // get a vector of a range of pwm pins, pin 2 until 13

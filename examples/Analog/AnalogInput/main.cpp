@@ -18,9 +18,10 @@
    to pin 13 on the board the LED is optional.
    */
 
-#include "analogInput.h"
-#include "digitalOutput.h"
-#include "time.h"
+#include <AnalogPin.h>
+#include <Pin.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	AnalogPin potentiometer(A0); // potentiometer object, represent the analog input pin A0

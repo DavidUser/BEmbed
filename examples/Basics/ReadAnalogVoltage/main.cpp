@@ -4,7 +4,10 @@
    Attach the center pin of potentiometer to pin A0, and the outside pins to +5V and ground
    */
 
-#include <analogInput.h>
+#include <AnalogPin.h>
+#include <Serial.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	AnalogPin potentiometer(A0); // potentiometer object represent the analog pin A0

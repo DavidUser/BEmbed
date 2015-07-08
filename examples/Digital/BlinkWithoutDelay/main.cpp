@@ -11,9 +11,11 @@
    that's attached to pin 13, so no hardware is needed for this example.
    */
 
-#include <digitalOutput.h>
-#include <interruption.h>
+#include <Pin.h>
+#include <TimeInterruption.h>
 #include <Serial.h>
+#include <time.h>
+using namespace zeus;
 
 Pin led(13); // led object represent the digital pin 13
 

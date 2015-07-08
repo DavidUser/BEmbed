@@ -9,9 +9,10 @@
    * Analog sensor (potentiometer will do) attached to analog input A0
    */
 
-#include "analogInput.h"
-#include "Serial.h"
-#include "time.h"
+#include <AnalogPin.h>
+#include <Serial.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	/* Define the number of samples to keep track of. The higher the number,

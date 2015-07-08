@@ -3,7 +3,9 @@
    Turns LED on and off by one second, repeatedly.
 */
 
-#include <digitalOutput.h>
+#include <Pin.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	Pin led(13); //pin 13 are represented by this object named led

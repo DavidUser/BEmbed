@@ -11,8 +11,10 @@
    * LED connected from digital pin 9 to ground
    */
 
-#include "map.h"
-#include "analogIO.h"
+#include <map.h>
+#include <time.h>
+#include <AnalogPin.h>
+using namespace zeus;
 
 main() {
 	const AnalogPin potentiometer(A0); // object potentiometer represents the analog readable pin A0

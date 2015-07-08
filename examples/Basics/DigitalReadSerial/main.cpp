@@ -3,7 +3,10 @@
    Reads a digital input on  pin 2, prints the result to the serial monitor
 */
 
-#include <digitalInput.h>
+#include <Pin.h>
+#include <Serial.h>
+#include <time.h>
+using namespace zeus;
 
 main() {
 	Pin button(2); // object button represent the pin 2

@@ -15,8 +15,9 @@
    This pullup configuration enable a onboard pullup circuit
    */
 
-#include <digitalIO.h>
+#include <Pin.h>
 #include <Serial.h>
+using namespace zeus;
 
 main() {
 	Pin button(2, PULLUP); // object button represents the digital pin 2
