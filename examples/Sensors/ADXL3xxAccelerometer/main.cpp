@@ -18,11 +18,11 @@
 #include <AnalogPin.h>
 #include <Serial.h>
 #include <time.h>
-#include <Pin.h>
+#include <DigitalPin.h>
 using namespace zeus;
 
 main() {
-	Pin groundPin(18), powerPin(19); // using A4 and A5 like digital output pins 
+	DigitalPin groundPin(18), powerPin(19); // using A4 and A5 like digital output pins 
 
 	groundPin.turnOff(); // put low voltage on ground pin
 	powerPin.turnOn(); // put high voltage on power pin

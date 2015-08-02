@@ -15,13 +15,13 @@
    This pullup configuration enable a onboard pullup circuit
    */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <Serial.h>
 using namespace zeus;
 
 main() {
-	Pin button(2, PULLUP); // object button represents the digital pin 2
-	Pin led(13); // object led represents the digital pin 13
+	DigitalPin button(2, PULLUP); // object button represents the digital pin 2
+	DigitalPin led(13); // object led represents the digital pin 13
 
 	Serial usb; // object usb represents the serial connection
 

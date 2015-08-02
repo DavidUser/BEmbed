@@ -14,13 +14,13 @@
    attached to pin 13
    */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <SignalInterruption.h>
 #include <time.h>
 using namespace zeus;
 
-Pin button(2); // object button represent the digital pin 2
-Pin led(13); // object led represent the digital pin 13
+DigitalPin button(2); // object button represent the digital pin 2
+DigitalPin led(13); // object led represent the digital pin 13
 
 long debounceDelay = 50;
 

@@ -16,12 +16,12 @@
    most Arduino boards)
    */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <SignalInterruption.h>
 using namespace zeus;
 
-const Pin button(2);
-const Pin led(13);
+const DigitalPin button(2);
+const DigitalPin led(13);
 
 unsigned int buttonPushCounter = 0;
 

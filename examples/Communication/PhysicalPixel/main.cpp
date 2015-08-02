@@ -7,12 +7,12 @@
    */
 
 #include <Serial.h>
-#include <Pin.h>
+#include <DigitalPin.h>
 using namespace zeus; // using Serial and Pin from namespace zeus
 
 main() {
 	Serial usb; // usb object, represents the USB serial connection
-	Pin led(13); // led object, represents the digital output pin 13
+	DigitalPin led(13); // led object, represents the digital output pin 13
 
 	while(usb.connected()) { // while usb is connected
 		char character;

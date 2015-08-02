@@ -19,13 +19,13 @@
    */
 
 #include <AnalogPin.h>
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <time.h>
 using namespace zeus;
 
 main() {
 	AnalogPin potentiometer(A0); // potentiometer object, represent the analog input pin A0
-	Pin led(13); // led object, represent the digital output pin 13
+	DigitalPin led(13); // led object, represent the digital output pin 13
 
 	while(true) { // repreat forever
 		// get the analog input value and using that like time

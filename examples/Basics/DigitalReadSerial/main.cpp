@@ -3,13 +3,13 @@
    Reads a digital input on  pin 2, prints the result to the serial monitor
 */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <Serial.h>
 #include <time.h>
 using namespace zeus;
 
 main() {
-	Pin button(2); // object button represent the pin 2
+	DigitalPin button(2); // object button represent the pin 2
 	Serial usb; // object usb represent the serial connection, using 9600 hz default bound rate
 
 	while(true) { //do this check forever

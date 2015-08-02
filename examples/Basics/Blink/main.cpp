@@ -3,12 +3,12 @@
    Turns LED on and off by one second, repeatedly.
 */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <time.h>
 using namespace zeus;
 
 main() {
-	Pin led(13); //pin 13 are represented by this object named led
+	DigitalPin led(13); //pin 13 are represented by this object named led
 	
 	while(true) { //do this repeatedly forever
 		led.turnOn(); // put high voltage on pin

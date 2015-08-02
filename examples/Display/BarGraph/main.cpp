@@ -16,14 +16,14 @@
    * Potentiometer botton to ground
    */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <AnalogPin.h>
 #include <map.h>
 using namespace zeus;
 #include <vector>
 
 main() {
-	std::vector<Pin> bar = Pin::getRange(2,11); // get a range of objects that represent digital pins
+	std::vector<DigitalPin> bar = DigitalPin::getRange(2,11); // get a range of objects that represent digital pins
 	AnalogPin potentiometer(A0); // represents the analog input pin A0
 
 	while (true) { // repeat forever

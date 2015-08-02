@@ -11,13 +11,13 @@
    that's attached to pin 13, so no hardware is needed for this example.
    */
 
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <TimeInterruption.h>
 #include <Serial.h>
 #include <time.h>
 using namespace zeus;
 
-Pin led(13); // led object represent the digital pin 13
+DigitalPin led(13); // led object represent the digital pin 13
 
 // this function make the blink step
 void blink() { 	

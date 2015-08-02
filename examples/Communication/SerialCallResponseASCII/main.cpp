@@ -15,7 +15,7 @@
 
 #include <Serial.h>
 #include <time.h>
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <AnalogPin.h>
 using namespace zeus;
 
@@ -33,7 +33,7 @@ main() {
 	//TODO you can check if the data recived is the expected
 
 	AnalogPin firstSensor(A0), secondSensor(A2); // that pins represent the analog pins where the pins are connected
-	Pin button(2); // that pin represent the digital pin where the button is connected
+	DigitalPin button(2); // that pin represent the digital pin where the button is connected
 
 	// send the sensor values
 	// diferently from Arduino example delay to ADC recover is not necessary, it's built-in checked

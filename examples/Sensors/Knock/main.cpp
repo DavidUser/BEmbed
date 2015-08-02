@@ -14,13 +14,13 @@
 
 #include <AnalogPin.h>
 #include <Serial.h>
-#include <Pin.h>
+#include <DigitalPin.h>
 #include <time.h>
 using namespace zeus;
 
 main() {
 	AnalogPin sensor(A0); // sensor object, represents the analog pin A0 where piezo are attached
-	Pin led(13); // led object, represents the digital pin 13 where led is attached
+	DigitalPin led(13); // led object, represents the digital pin 13 where led is attached
 	Serial usb; // usb object, represents the USB serial connection default (USB, 9600)
 	const unsigned THRESHOLD = 100; // knock is detected as from threshold
 
