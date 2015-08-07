@@ -19,12 +19,12 @@
 using namespace zeus;
 
 main() {
-	PWMPin pingSensor(7); // represent the digital pin 7 capable of write and read pulses
+	PulsePin pingSensor(7); // represent the digital pin 7 capable of write and read pulses
 	Serial usb; // represent the USB connection
 
 	while (true) { // repeat forever
-		pingSensor.writePulse(5_millisenconds); // trigger a single HIGH pulse with 5 ms of duration
-		unsigned long duration = pingSensor.readPulse(); // read the duration of the single pulse input
+		pingSensor.write(5_millisenconds); // trigger a single HIGH pulse with 5 ms of duration
+		unsigned long duration = pingSensor.read(); // read the duration of the single pulse input
 		
 		// using the speed of sound calculate the distance, speed of sound: 73.746 ms/in or 29 ms/cm
 		// divide by 2 because the sound wave goes to the object and come back so travel twice the distance

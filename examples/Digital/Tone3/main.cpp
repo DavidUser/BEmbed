@@ -31,7 +31,7 @@ main() {
 	while (true) // do this check forever
 		for (AnalogPin key : keys) // for each key, using C++11 foreach syntax
 			if (key.read() > THRESHOLD) // if value read from sensor is greater than the threshold
-				speaker.tone(keyToNote[key], 20_milliseconds); // play the corresponding note by 20ms
+				speaker.play(keyToNote[key], 20_milliseconds); // play the corresponding note by 20ms
 }
 		
 

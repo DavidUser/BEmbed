@@ -18,14 +18,14 @@
 using namespace zeus;
 
 main() {
-	PWMPin xPulsePin(2), yPulsePin(3); // represents the pulse width read where the pins are connected
+	PulsePin xPulsePin(2), yPulsePin(3); // represents the pulse width read where the pins are connected
 	struct { unsigned x, y; } acceleration; // acceletation with components x and y
 	Serial usb; // represents the USB connection
 
 	while (true) { // repreat forever
 		// read the pulses width and convert to milli-g's
-		acceleration.x = (xPulsePin.readPulse() / 10 - 500) * 8; 
-		acceleration.y = (yPulsePin.readPulse() / 10 - 500) * 8;
+		acceleration.x = (xPulsePin.read() / 10 - 500) * 8; 
+		acceleration.y = (yPulsePin.read() / 10 - 500) * 8;
 
 		usb << acceleration.x << '\t' << acceleration.y << endl; // prints the accelation components
 		delay(100_milliseconds); // wait 100 ms

@@ -24,8 +24,8 @@ using namespace zeus;
 main() {
 	DigitalPin groundPin(18), powerPin(19); // using A4 and A5 like digital output pins 
 
-	groundPin.turnOff(); // put low voltage on ground pin
-	powerPin.turnOn(); // put high voltage on power pin
+	groundPin.turnHigh(); // put low voltage on ground pin
+	powerPin.turnLow(); // put high voltage on power pin
 
 	AnalogPin xPin(A3), yPin(A2), zPin(A1); // objects that represent analog input pins A1, A2 and A3
 	Serial usb; // usb object, represent the serial USB connection

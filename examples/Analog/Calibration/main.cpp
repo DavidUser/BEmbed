@@ -25,7 +25,7 @@ main() {
 	AnalogPin sensor(A0);
 	PWMPin led(9);
 
-	led.turnOn();
+	led.write(led.getMaxLimit());
 
 	// calibrate during the first five seconds
 	unsigned int sensorMax = led.getMinLimit(),

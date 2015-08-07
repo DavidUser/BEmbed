@@ -33,7 +33,7 @@ main() {
 		 */
 		int pitch = map(sensorReading, 400, 1000, 120, 1500);
 
-		speaker.tone(pitch, 10_milliseconds); // play the pitch by 10 milliseconds
+		speaker.play(pitch, 10_milliseconds); // play the pitch by 10 milliseconds
 		delay(1_seconds); // wait 1 second
 	}
 }

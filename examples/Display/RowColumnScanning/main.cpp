@@ -14,13 +14,13 @@
 
    */
 
-#include <LEDMatrix.h>
+#include <LedMatrix.h>
 #include <AnalogPin.h>
 using namespace zeus;
 
 main() {
 	// represent the LED matrix component
-	LEDMatrix matrix( 
+	LedMatrix matrix( 
 			{9, 14, 8, 12, 1, 7, 2, 5},  // cathodes pins
 			{13, 3, 4, 10, 6, 11, 15, 16} // anodes pins
 			);

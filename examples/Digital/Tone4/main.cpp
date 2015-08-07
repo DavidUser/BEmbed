@@ -18,11 +18,11 @@ main() {
 	Tone speakers[] = { 6, 7, 8 };
 
 	while (true) { // repreat the play forever
-		speakers[0].tone(440, 200_milliseconds); // play note by 200ms
+		speakers[0].play(440, 200_milliseconds); // play note by 200ms
 		delay(200_milliseconds); // wait 200ms, until the note ends
-		speakers[1].tone(494, 500_milliseconds); // play note by 500ms
+		speakers[1].play(494, 500_milliseconds); // play note by 500ms
 		delay(500_milliseconds); // wait 500ms, until the note ends
-		speakers[2].tone(523, 300_milliseconds); // play note by 300ms
+		speakers[2].play(523, 300_milliseconds); // play note by 300ms
 		delay(300_milliseconds); // wait 300ms, until the note ends
 	}
 }
