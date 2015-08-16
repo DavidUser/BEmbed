@@ -1,6 +1,7 @@
 #pragma once
 
 #include "InputPin.h"
+#include "../platforms/PlatformFactory.h"
 
 namespace zeus {
 	namespace interfaces {
@@ -8,7 +9,6 @@ namespace zeus {
 		public:
 			virtual void setResolution(zeus::platforms::PlatformFactory::AnalogResolution resolution) = 0;
 			virtual Resolution getResolution() const = 0;
-			virtual std::pair<int, int> getLimits() const = 0;
 		};
 	}
 }
