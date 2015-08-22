@@ -1,3 +1,5 @@
+#include "Interruption.h"
+
 void zeus::interfaces::Interruption::addUserFunction(const FunctionType function) {
 	//TODO some limit of function execution time need be measured and checked
 	functionsToEveryEvent.insert(function);
