@@ -1,9 +1,11 @@
 #pragma once
 
+#include <stdexcept>
+
 namespace zeus {
 	namespace interfaces {
 		namespace exceptions {
-			class InvalidPinNumber {
+			class InvalidPinNumber : public std::out_of_range {
 
 			private:
 				unsigned number;
