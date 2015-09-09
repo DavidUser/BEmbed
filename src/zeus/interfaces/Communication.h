@@ -1,5 +1,11 @@
+#pragma once
+
+#include <cinttypes>
+#include "../platforms/PlatformFactory.h"
+
 namespace zeus {
 	namespace interfaces {
+		using Byte = std::uint8_t;
 		class Communication {
 		public:
 			virtual void send(Byte byte) = 0;
