@@ -22,7 +22,7 @@ namespace zeus {
 			/* Construction by port and pin
 			   habitualy found on datasheet of Microcontroller */
 			Pin(PortType * const port, const unsigned position);
-		private:
+		protected:
 			/* Verify if the pin is compatible with the functionality expected */
 			virtual bool compatible(const unsigned pin) const noexcept = 0;
 			//TODO verify the compatibilite of pin based on port and port position
