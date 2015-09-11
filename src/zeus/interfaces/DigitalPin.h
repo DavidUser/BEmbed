@@ -5,7 +5,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class DigitalPin : zeus::interfaces::IOPin {
+		class DigitalPin : public zeus::interfaces::IOPin {
 		public:
 			static const bool HIGH = true;
 			static const bool LOW = false;

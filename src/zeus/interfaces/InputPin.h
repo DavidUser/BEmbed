@@ -4,7 +4,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class InputPin : zeus::interfaces::Pin {
+		class InputPin : public zeus::interfaces::Pin {
 		public:
 			virtual unsigned long long read() const = 0;
 		};

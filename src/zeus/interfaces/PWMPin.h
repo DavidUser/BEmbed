@@ -5,7 +5,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class PWMPin : zeus::interfaces::OutputPin {
+		class PWMPin : public zeus::interfaces::OutputPin {
 		public:
 			virtual void setPulseWidth(Time width) = 0;
 			virtual Time getPulseWidth() const = 0;

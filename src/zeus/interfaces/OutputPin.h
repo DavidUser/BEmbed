@@ -4,7 +4,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class OutputPin : zeus::interfaces::Pin {
+		class OutputPin : public zeus::interfaces::Pin {
 		public:
 			virtual void write(unsigned long long value) const = 0;
 		};

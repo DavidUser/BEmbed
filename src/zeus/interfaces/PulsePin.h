@@ -5,7 +5,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class PulsePin : zeus::interfaces::IOPin {
+		class PulsePin : public zeus::interfaces::IOPin {
 		public:
 			virtual void write(zeus::Time width) const = 0;
 			virtual zeus::Time read() const = 0;

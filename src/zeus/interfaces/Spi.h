@@ -2,7 +2,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class Spi : zeus::interfaces::Communication {
+		class Spi : public zeus::interfaces::Communication {
 		};
 	}
 }

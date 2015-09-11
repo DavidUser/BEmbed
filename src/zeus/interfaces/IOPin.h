@@ -5,7 +5,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		class IOPin : zeus::interfaces::InputPin, zeus::interfaces::OutputPin {
+		class IOPin : public zeus::interfaces::InputPin, zeus::interfaces::OutputPin {
 		};
 	}
 }
