@@ -6,7 +6,7 @@
 #include "platforms/exceptions/NoHardwareSupport.h"
 
 namespace zeus {
-	class AnalogPin : zeus::interfaces::AnalogPin {
+	class AnalogPin {
 		unique_ptr<zeus::interfaces::AnalogPin> pinInstance;
 		public:
 			AnalogPin(unsigned pinNumber);
