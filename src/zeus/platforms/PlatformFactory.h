@@ -8,16 +8,35 @@
 #include "../interfaces/Timer.h"
 #include "../interfaces/Interruption.h"
 #include <memory>
+#include <map>
 
 namespace zeus {
 	namespace platforms {
+		class PlatformFactory;
+
+		// TODO define unique resource specialization to management of instace creation
+		template <typename Resource>
+		class UniqueResource : public std::unique_ptr<Resource> {
+			private:
+				PlatformFactory &owner;
+			public:
+				UniqueResource(PlatformFactory &owner, Resource *resource) : owner(owner) resource(resource);
+				~UniqueResource();
+		};
+					
+
 		class PlatformFactory {
+			template <typename T>
+				friend UniqueResource;
 			public:
 				enum class CommunicationChannel;
 				enum class AnalogResolution;
 				enum class InterruptionEvent;
 				enum class Timers;
 				enum class TimerMode;
+
+			private:
+				std::map<Timers, std::unique_ptr<zeus::interface::Timer>> onUseTimers;
 
 			private:
 				PlatformFactory() = default;
