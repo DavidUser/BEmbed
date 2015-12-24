@@ -1,0 +1,2 @@
+Each new platform have a directory with the platform name.
+Platform implementation is a cpp file definition of PlatformFactory. Feel free to use the interface package (namespace) on your implementation.

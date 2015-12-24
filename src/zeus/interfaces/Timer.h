@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Time.h"
-#include "../platforms/PlatformFactory.h"
+#include "../platforms/PlatformFactoryEnums.h"
 
 namespace zeus {
 	namespace interfaces {
@@ -14,7 +14,7 @@ namespace zeus {
 			virtual zeus::platforms::PlatformFactory::InterruptionEvent getInterruptionEvent() const = 0;
 			virtual constexpr unsigned long long getMaxLimit() const noexcept = 0;
 			virtual unsigned long long getCurrent() const = 0;
-			virtual static constexpr unsigned long long getClocksBy(const zeus::Time time) noexcept = 0;
+			virtual constexpr unsigned long long getClocksBy(const zeus::Time time) const noexcept = 0;
 		};
 	}
 }

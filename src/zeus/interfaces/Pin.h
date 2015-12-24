@@ -37,7 +37,7 @@ namespace zeus {
 			unsigned getPortPosition() const noexcept;
 			/* return integer limits of representable values to write on pin */
 			// TODO can return a constexp on derived classes
-			virtual std::pair<int, int> getLimits() const noexcept = 0;
+			virtual std::pair<int, int> getLimits() const = 0;
 			int getMinLimit() const noexcept;
 			int getMaxLimit() const noexcept;
 		};
