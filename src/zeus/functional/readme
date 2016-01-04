@@ -1,0 +1,2 @@
+It's a directory to put no class dependent functions (global functions)
+It's working fine to solve depent filenames colision on include.
