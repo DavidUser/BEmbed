@@ -5,7 +5,7 @@
 
 namespace zeus {
 	namespace interfaces {
-		using Resolution = zeus::platforms::PlatformFactory::AnalogResolution;
+		using Resolution = zeus::platforms::AnalogResolution;
 		class AnalogPin : public zeus::interfaces::InputPin {
 		public:
 			virtual void setResolution(Resolution resolution) = 0;

@@ -7,10 +7,10 @@ namespace zeus {
 	namespace interfaces {
 		namespace exceptions {
 			class InvalidInterruptEvent : public std::out_of_range {
-				platforms::PlatformFactory::InterruptionEvent event;
+				platforms::InterruptionEvent event;
 
 			public:
-				InvalidInterruptEvent(platforms::PlatformFactory::InterruptionEvent event, std::string message = "");
+				InvalidInterruptEvent(platforms::InterruptionEvent event, std::string message = "");
 			};
 		}
 	}

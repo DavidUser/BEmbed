@@ -2,11 +2,11 @@
 
 #include "OutputPin.h"
 #include "Time.h"
-#include "../platforms/PlatformFactoryEnums.h"
+#include "../platforms/PlatformEnums.h"
 
 namespace zeus {
 	namespace interfaces {
-		using PWMMode = zeus::platforms::PlatformFactory::PWMMode;
+		using PWMMode = zeus::platforms::PWMMode;
 		class PWMPin : public zeus::interfaces::OutputPin {
 		public:
 			virtual void setPulseWidth(Time width) = 0;

@@ -1,5 +1,6 @@
 #pragma once
 
+//TODO include microseconds, it's present on Arduino
 //TODO Can include minute, hour, day and another time measures inclusive clocks can be very useful
 
 namespace zeus {

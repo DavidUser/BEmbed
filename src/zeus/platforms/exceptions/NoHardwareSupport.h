@@ -10,7 +10,7 @@ namespace zeus {
 				std::string similarResources;
 
 			public:
-				void NoHardwareSupport(std::string similarResources = "");
+				NoHardwareSupport(std::string similarResources = "");
 				std::string getSimilarResources();
 				void setSimilarResources(std::string similarResources);
 			};

@@ -4,7 +4,7 @@
 */
 
 #include <DigitalPin.h>
-#include <time.h>
+#include <ztime.h>
 using namespace zeus;
 
 main() {
