@@ -1,5 +1,6 @@
-# Zeus Library
-Proposal of elegant unique development for all microcontrollers.
+# BEmbed Project
+_Made by and for_ programmers with **O**bject **O**riented knoledge and who want work with robotics, automation, digital signal processing and anything that needs of an embedded system.
+Proposal of elegant unique development for all microcontrollers using an OO API.
 
 It's a library to developing easily and with a high level of customization, to you have the best performace and best productivity. So what we are doing is empower you to have great results.
 
