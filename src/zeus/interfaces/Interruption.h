@@ -1,9 +1,8 @@
 #pragma once
 
 #include "../platforms/PlatformFactory.h"
-#include <unordered_set>
-#include <unordered_map>
-#include "exceptions/InvalidInterruptEvent.h"
+#include <set>
+#include <map>
 
 namespace zeus {
 	namespace interfaces {
@@ -12,8 +11,8 @@ namespace zeus {
 			using FunctionType = void(*)();
 		private:
 			//TODO can be useful define priority of execution an use ordered (commum) set and map
-			std::unordered_set<FunctionType> functionsToEveryEvent;
-			std::unordered_map<platforms::InterruptionEvent, FunctionType> functionsWithSpecificEvent;
+			std::set<FunctionType> functionsToEveryEvent;
+			std::map<platforms::InterruptionEvent, FunctionType> functionsWithSpecificEvent;
 
 		private:
 			virtual platforms::InterruptionEvent getCurrentEvent() const noexcept = 0;
